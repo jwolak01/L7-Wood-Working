@@ -1,0 +1,60 @@
+    #dropDownContainer {
+        width: 20%;
+        height: 8vh;
+        text-align: center;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 30px;
+        height: 2px;
+        background-color: #000;
+        margin-top: 6px;
+        margin-left: 43.5%;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 0px);
+        transform: rotate(-45deg) translate(-9px, 0px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    /* Rotate last bar */
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-10px, -3px);
+        transform: rotate(45deg) translate(-10px, -3px);
+    }
+
+    #dropDownContainer .dropMenu ul li {
+        height: 5.95vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #dropDownContainer .dropMenu ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #menu {
+        background-color: transparent;
+        height: 18vh;
+        opacity: 0;
+        position: absolute;
+        top: -9999px;
+        visibility: hidden;
+        transition: 250ms;
+        border-radius: 5px;
+    }
+
+    #menu.show {
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        transition: 250ms;
+    }

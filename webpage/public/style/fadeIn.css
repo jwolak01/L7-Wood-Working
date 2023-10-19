@@ -1,0 +1,80 @@
+/* Below allows for fade in animation
+for the Homepage Header Logo and Controls */
+
+
+/**********************************/
+/******* MOBILE LOGO FADE IN ******/
+/**********************************/
+
+.fadeTag {
+    opacity: 0;
+    animation: fadeInAnimation ease 2.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fadeTag2 {
+    opacity: 0;
+    animation: fadeInAnimation ease 2.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/**********************************/
+/** LAPTOP/DESKTOP LOGO FADE IN ***/
+/**********************************/
+
+.svgWoodWorkingFadeIn {
+    opacity: 0;
+    animation: fadeInAnimation ease 2.5s;
+    /* animation-delay: 2.5s; */
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.svgBreakFadeIn {
+    opacity: 0;
+    animation: fadeInAnimation ease 2.5s;
+    /* animation-delay: 3.25s; */
+    animation-delay: 1.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.svgTabFadeIn {
+    opacity: 0;
+    animation: fadeInAnimation ease 2.75s;
+    /* animation-delay: 3.75s; */
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/**********************************/
+/******* TRANSITION CONTROLS ******/
+/**********************************/
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1.5s all ease;
+}
